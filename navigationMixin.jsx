@@ -37,7 +37,7 @@ module.exports = {
             } else if (typeof this.navOut === 'function') {
                 return this.navOut(dir, dirY);
             } else if (this.navData.parent) {
-                return this.navData.parent.navGetMove(dir);
+                return this.navData.parent.navGetMove(dir, dirY);
             }
         }.bind(this);
 
