@@ -71,18 +71,22 @@ module.exports = {
             case 'LEFT':
                 this.navMove(0, -1);
                 event.stopPropagation();
+                event.preventDefault();
                 break;
             case 'UP':
                 this.navMove(-1, 0);
                 event.stopPropagation();
+                event.preventDefault();
                 break;
             case 'RIGHT':
                 this.navMove(0, 1);
                 event.stopPropagation();
+                event.preventDefault();
                 break;
             case 'DOWN':
                 this.navMove(1, 0);
                 event.stopPropagation();
+                event.preventDefault();
                 break;
             default:
                 if (this.currentFocus.navHandleKey) {
